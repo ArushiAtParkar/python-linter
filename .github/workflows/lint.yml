@@ -11,16 +11,16 @@ jobs:
     runs-on: ubuntu-latest
  
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
  
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.13.1'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
  
-    - name: Install linter
-      uses: pip install pyflakes
-     
-    - name: Lint with pyflakes
-      uses: pyflakes script.py
+      - name: Install linter
+        run: pip install pyflakes
+ 
+      - name: Lint with pyflakes
+        run: pyflakes script.py
