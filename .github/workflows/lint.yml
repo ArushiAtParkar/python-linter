@@ -19,7 +19,8 @@ jobs:
       with:
         python-version: '3.13.1'
  
-    - name: Run thepythonaction
-      uses: cclauss/thepythonaction@v1
-      with:
-        args: script.py
+    - name: Install linter
+      uses: pip install pyflakes
+     
+    - name: Lint with pyflakes
+      uses: pyflakes script.py
