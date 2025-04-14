@@ -20,6 +20,6 @@ jobs:
         python-version: '3.13.1'
  
     - name: Run thepythonaction
-      uses: cclauss/thepythonaction@0.2.0
+      uses: cclauss/thepythonaction@v1
       with:
         args: script.py
