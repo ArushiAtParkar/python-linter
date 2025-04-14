@@ -1,6 +1,10 @@
-def greet(name):
-    """Function to greet a person."""
-    return f"Hello, {name}!"
+def add():
+    a = 5
+    b = 3
+        return a + b  
 
-greet("World")
-# This is a simple script that defines a function to greet a person by name.    
+        print(z)
+
+unused_variable = 10
+
+add()
